@@ -34,6 +34,8 @@ void Blind::step(bool dir){
 }
 
 void Blind::doTick() {
+    // TODO: use smoothLookup while accounting for belated doTick call (maximum speed should not be surpassed)
+
     //TODO: Fix direction change during movement
     //TODO: check for target position out of bounds
     unsigned long current_micros = micros(); // Get the current time in microseconds
